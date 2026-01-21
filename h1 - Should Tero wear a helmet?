@@ -7,7 +7,8 @@ At the highest levels, when we threat model, we ask four key questions:
 What are we working on?
 What can go wrong?
 What are we going to do about it?
-Did we do a good enough job
+Did we do a good enough job?
+
 Why threat model?
 When you perform threat modeling, you begin to recognize what can go wrong in a system. It also allows you to pinpoint design and implementation issues that require mitigation, whether it is early in or throughout the lifetime of the system. The output of the threat model, which are known as threats, informs decisions that you might make in subsequent design, development, testing, and post-deployment phases.
 
