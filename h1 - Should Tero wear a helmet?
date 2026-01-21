@@ -1,5 +1,26 @@
 h1
-Should Tero wear a helmet?
-No, although helmet is usefuii, but there is no reason that where it every where.
+What is threat modeling?
+Threat modeling is analyzing representations of a system to highlight concerns about security and privacy characteristics.
 
-參考資料 Karvinen 2023：Palvelinten Hallinta https://terokarvinen.com/2023/palvelinten-hallinta-2023-kevat/
+At the highest levels, when we threat model, we ask four key questions:
+
+What are we working on?
+What can go wrong?
+What are we going to do about it?
+Did we do a good enough job
+Why threat model?
+When you perform threat modeling, you begin to recognize what can go wrong in a system. It also allows you to pinpoint design and implementation issues that require mitigation, whether it is early in or throughout the lifetime of the system. The output of the threat model, which are known as threats, informs decisions that you might make in subsequent design, development, testing, and post-deployment phases.
+
+Who should threat model?
+You. Everyone. Anyone who is concerned about the privacy, safety, and security of their system.
+
+How should I use the Threat Modeling Manifesto?
+Use the Manifesto as a guide to develop or refine a methodology that best fits your needs. We believe that following the guidance in the Manifesto will result in more effective and more productive threat modeling. In turn, this will help you to successfully develop more secure applications, systems, and organizations and protect them from threats to your data and services. The Manifesto contains ideas, but is not a how-to, and is methodology-agnostic.
+
+The Threat Modeling Manifesto follows a similar format to that of the Agile Manifesto by identifying the two following guidelines:
+
+Values: A value in threat modeling is something that has relative worth, merit, or importance. That is, while there is value in the items on the right, we value the items on the left more.
+Principles: A principle describes the fundamental truths of threat modeling. There are three types of principles: (i) fundamental, primary, or general truths that enable successful threat modeling, (ii) patterns that are highly recommended, and (iii) anti-patterns that should be avoided.
+
+
+References: Braiterman et al 2020: Threat modeling manifesto
