@@ -1,0 +1,31 @@
+X)
+    The authors highlight two critical flaws in traditional cyber security: 
+first, the reaction usually begins only after the system being hacked;
+second, attacks are assumed to result from exploitable vulnerabilities.
+Traditional cyber security always focuses on vulnerabilities and it is hard to against APTs.
+
+APT stands for Advanced Persistent Threat, which describes attacks as long-term, well-resourced, and strategic, and can be customized for precision attacks targeting specific devices or systems, having already successfully breached many high-value targets, such as NASA, the Pentagon, and other government agencies. 
+The authors argue that the most effective and necessary defense against modern APTs is to use intelligence-driven defense to reduce attacker success rates, and apply the intrusion kill chain to disrupt attacks in their early stages.
+In future, cyber security will no longer focus only on fixing vulnerabilities and applying patches. Instead, it requires continuously collecting intelligence on attacker behavior, analyzing attack processes and patterns, and using that intelligence to defend proactively, it is necessary for us to learn more about it.
+
+References: Hutchins et al 2011: Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains, chapters Abstract, 3.2 Intrusion Kill Chain.
+
+
+a)
+tactic: 
+Initial Access -> Command and Control -> Exfiltration;
+To gain a foothold in Google's internal network -> To maintain a persistent link with the compromised host -> To steal intellectual property and sensitive account info.
+
+technique: Drive-by Compromise;
+The employee visited a malicious website that automatically triggered the exploit.
+subtechnique: Exploitation for Client Execution;
+Using a heap overflow vulnerability in Internet Explorer.
+Technique: Encrypted Channel; 
+Using SSL to hide communication from network security tools.
+
+procedure:
+Step 1: The adversary hosted a JavaScript-based shellcode on a compromised webpage. When the IE browser loaded it, it caused a memory overflow.
+Step 2: The shellcode executed an FTP download command to fetch a second-stage payload from a remote server.
+Step 3: The malware established an SSL-encrypted connection to a C2 server, then used specialized tools to monitor and harvest Google server credentials from the infected desktop.
+
+References: https://www.informationsecurity.com.tw/article/article_detail.aspx?aid=6768, Google Operation Aurora – informationsecurity 2012/5/15 by Xecure-Lab
