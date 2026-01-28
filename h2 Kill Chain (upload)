@@ -14,10 +14,13 @@ References: Hutchins et al 2011: Intelligence-Driven Computer Network Defense In
 
 a)
 tactic: 
+Refined Definition: The reason why the attacker want to attack it(maybe some goal to achieve)
 Initial Access -> Command and Control -> Exfiltration;
 To gain a foothold in Google's internal network -> To maintain a persistent link with the compromised host -> To steal intellectual property and sensitive account info.
 
 technique: Drive-by Compromise;
+technique Refined Definition: How does the attacker attack
+subtechnique Refined Definition: more detail about how they attack
 The employee visited a malicious website that automatically triggered the exploit.
 subtechnique: Exploitation for Client Execution;
 Using a heap overflow vulnerability in Internet Explorer.
@@ -25,6 +28,7 @@ Technique: Encrypted Channel;
 Using SSL to hide communication from network security tools.
 
 procedure:
+Refined Definition: The specific implementation, step by step for attack(commend, tool, when and were)
 Step 1: The adversary hosted a JavaScript-based shellcode on a compromised webpage. When the IE browser loaded it, it caused a memory overflow.
 Step 2: The shellcode executed an FTP download command to fetch a second-stage payload from a remote server.
 Step 3: The malware established an SSL-encrypted connection to a C2 server, then used specialized tools to monitor and harvest Google server credentials from the infected desktop.
