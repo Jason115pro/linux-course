@@ -1,27 +1,58 @@
-h1
-What is threat modeling?
-Threat modeling is analyzing representations of a system to highlight concerns about security and privacy characteristics.
+h1(update)
 
-At the highest levels, when we threat model, we ask four key questions:
+x) Threat Model
+1. What is threat modeling?
+Threat modeling is analyzing representations of a system to highlight concerns about security and privacy characteristics. At the highest levels, we ask four key questions:
+  What are we working on?
+  What can go wrong?
+  What are we going to do about it?
+  Did we do a good enough job?
 
-What are we working on?
-What can go wrong?
-What are we going to do about it?
-Did we do a good enough job?
+2. Why threat model?
+It allows you to recognize potential failures and pinpoint design issues requiring mitigation early in the system's lifetime. The output informs decisions in design, development, and testing.
 
-Why threat model?
-When you perform threat modeling, you begin to recognize what can go wrong in a system. It also allows you to pinpoint design and implementation issues that require mitigation, whether it is early in or throughout the lifetime of the system. The output of the threat model, which are known as threats, informs decisions that you might make in subsequent design, development, testing, and post-deployment phases.
+3. Who should threat model?
+Everyone. Anyone concerned about the privacy, safety, and security of their system.
 
-Who should threat model?
-You. Everyone. Anyone who is concerned about the privacy, safety, and security of their system.
-
-How should I use the Threat Modeling Manifesto?
-Use the Manifesto as a guide to develop or refine a methodology that best fits your needs. We believe that following the guidance in the Manifesto will result in more effective and more productive threat modeling. In turn, this will help you to successfully develop more secure applications, systems, and organizations and protect them from threats to your data and services. The Manifesto contains ideas, but is not a how-to, and is methodology-agnostic.
-
-The Threat Modeling Manifesto follows a similar format to that of the Agile Manifesto by identifying the two following guidelines:
-
-Values: A value in threat modeling is something that has relative worth, merit, or importance. That is, while there is value in the items on the right, we value the items on the left more.
-Principles: A principle describes the fundamental truths of threat modeling. There are three types of principles: (i) fundamental, primary, or general truths that enable successful threat modeling, (ii) patterns that are highly recommended, and (iii) anti-patterns that should be avoided.
+4. The Threat Modeling Manifesto
+The Manifesto is a methodology-agnostic guide based on:
+  Values: Relative worth .
+  Principles: Fundamental truths, including recommended patterns and anti-patterns to avoid.
+  
+References: Braiterman et al. (2020). Threat Modeling Manifesto.
 
 
-References: Braiterman et al 2020: Threat modeling manifesto
+a)Security hygiene
+Definition & Key Measures
+Security hygiene refers to the fundamental, routine practices that individuals and organizations perform to maintain system health. 
+Core habits include:
+  MFA (Multi-Factor Authentication): Protecting identity.
+  Patch Management: Regularly update software.
+  Internet security: Do not use public Wi-Fi.
+
+References: https://neticrm.tw/news/20047 netiCRM 【講座筆記】資安警察教你保護個資、因應資安事件！([Lecture Notes] Cybersecurity Police Teach You How to Protect Your Personal Data and Respond to Cybersecurity Incidents!)
+
+
+b)Make-belief boogie-man -FPS game-
+(1) What are we working on?
+    We are developing a competitive "FPS (First-Person Shooter) Game".
+    Assets: Player's Personal Identifiable Information and payment tools.
+    Narrative: Developed through collaboration between business leads and technical experts to ensure data availability, system integrity, and player privacy.
+
+(2) What can go wrong? 
+    Information Disclosure: Leakage of player accounts or sensitive payment data.
+    Risk Calculation: 10% probability of breach $\times$ €2,000,000 (Legal fines&brand damage) = €200,000 Expected Value.
+
+(3) What are we going to do about it? 
+  Applying META strategies:
+  Mitigate: Secure transactions using SSL/TLS encryption protocols.
+  Eliminate: Use third-party payment tokens to avoid storing raw credit card details on internal servers.
+  Accept: Accept minimal risks related to non-critical service interruptions.
+
+(4) Did we do a good enough job? 
+  This is a continuous process. 
+  We ensure effectiveness through regular penetration testing, anti-cheat updates, and constant threat reassessment.
+
+References: https://www.informationsecurity.com.tw/article/article_detail.aspx?aid=11618 INFO-security 遊戲產業的資安挑戰：開發過程中的威脅與虛擬經濟防護(Cybersecurity Challenges in the Gaming Industry: Threats During Development and Protection of the Virtual Economy)
+
+
