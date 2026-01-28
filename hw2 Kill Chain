@@ -29,3 +29,5 @@ Step 2: The shellcode executed an FTP download command to fetch a second-stage p
 Step 3: The malware established an SSL-encrypted connection to a C2 server, then used specialized tools to monitor and harvest Google server credentials from the infected desktop.
 
 References: https://www.informationsecurity.com.tw/article/article_detail.aspx?aid=6768, Google Operation Aurora – informationsecurity 2012/5/15 by Xecure-Lab
+
+b)
