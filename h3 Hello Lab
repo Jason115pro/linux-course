@@ -10,8 +10,15 @@ References: https://linux.vbird.org/linux_server/centos6/0140networkcommand.php#
 b) Local only test
 https://github.com/Jason115pro/linux-course/blob/main/h3%20quistion%20b.png
 References: https://linux.vbird.org/linux_server/centos4/0210port_limit.php -linux.vbird.org 7.1.2 nmap
+            https://ithelp.ithome.com.tw/articles/10357186 -vina 2024/9/24
 
 c) Daemon scan test
 https://github.com/Jason115pro/linux-course/blob/main/h3%20quistion%20c.png
 
 d) Bandit 0-5
+0: 
+1: 
+2: 
+3: 
+4: 
+References: https://ithelp.ithome.com.tw/articles/10332572 -littlebread 2023/10/2
