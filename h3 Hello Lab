@@ -1,5 +1,26 @@
 x)
+For Install Debian on Virtualbox
+Virtualization: Utilize VirtualBox to create an isolated lab. This provides a safe space for experimentation without risking the host operating system.
+Desktop Environment: XFCE is low resource footprint and high stability.
+Post-Installation: Always run sudo apt update immediately after the first boot to synchronize the local package index.
 
+For Basics Commands
+Navigation:
+pwd: Print Working Directory
+ls: List directory contents (Use -l for details, -a for hidden files)
+cd: Change directory
+
+File Handling:
+mkdir: Create a new directory
+touch: Create an empty file
+rm: Remove files
+
+Efficiency Shortcuts:
+Tab Completion: The single most important skill to save time and prevent typos.
+Arrow Keys: Quickly cycle through previously executed commands
+
+Privilege Management: 
+sudo is essential for performing administrative tasks, such as installing new software
 
 
 a) Can't fish test
