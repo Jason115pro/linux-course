@@ -4,9 +4,12 @@ x)
 
 a) Can't fish test
 https://github.com/Jason115pro/linux-course/blob/main/h3%20Quistion%20a.png
+References: https://linux.vbird.org/linux_server/centos6/0140networkcommand.php#ping -linux.vbird.org 5.2.1
+            https://docs.oracle.com/zh-tw/learn/nmcli_ip_linux8/index.html#introduction -oracle help center
 
 b) Local only test
 https://github.com/Jason115pro/linux-course/blob/main/h3%20quistion%20b.png
+References: https://linux.vbird.org/linux_server/centos4/0210port_limit.php -linux.vbird.org 7.1.2 nmap
 
 c) Daemon scan test
 https://github.com/Jason115pro/linux-course/blob/main/h3%20quistion%20c.png
