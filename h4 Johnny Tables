@@ -1,0 +1,11 @@
+x)
+1.OWASP A01:2021 – Broken Access Control
+  This vulnerability occurs when the system fails to properly enforce restrictions on what authenticated users are allowed to do.
+  Attackers bypass authorization to access unauthorized functionality or data, such as accessing other users' accounts, viewing sensitive files, or gaining admin privileges.
+  It’s fascinating how we often focus so much on the authentication but forget to lock the authorization
+
+2.OWASP A05:2021 – Security Misconfiguration
+  Key Point: Security risks arising from insecure default settings, incomplete configurations, or poorly managed cloud storage.
+  This happens when developers leave default passwords unchanged, keep unnecessary features enabled, or allow verbose error messages that leak system technical details.
+  This is often the result of "speed over security". Leaving default settings active is like leaving the factory-set code on a new home security system.
+
