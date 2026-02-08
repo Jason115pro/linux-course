@@ -37,4 +37,14 @@ a)install Goat
 <img width="1486" height="869" alt="h4 quistion A-5" src="https://github.com/user-attachments/assets/913663af-a2df-4717-8519-2b703dbef9e1" />
 <img width="1494" height="834" alt="h4 quistion A-6" src="https://github.com/user-attachments/assets/4dba0330-05b7-4a47-a022-c3bee6e5d0c6" />
 
-b)
+b)F12
+Don't know where the quistion is
+
+c)Update all operating system and all applications in Linux
+<img width="801" height="369" alt="h4 quistion C-1" src="https://github.com/user-attachments/assets/27449a53-b863-4ba6-9d22-9d20102633cf" />
+<img width="626" height="72" alt="h4 quistion C-2" src="https://github.com/user-attachments/assets/4589ed0b-43d1-472f-a2be-231dc49def6f" />
+<img width="946" height="244" alt="h4 quistion C-3" src="https://github.com/user-attachments/assets/f91cfb4b-7901-4929-9f0b-16ed4e146916" />
+<img width="956" height="278" alt="h4 quistion C-4" src="https://github.com/user-attachments/assets/56a2d6d1-d240-4aca-8ba6-0b2928a0eefb" />
+
+d)Sequel -Solve SQLZoo
+
