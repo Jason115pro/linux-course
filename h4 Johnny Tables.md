@@ -38,7 +38,7 @@ a)install Goat
 <img width="1494" height="834" alt="h4 quistion A-6" src="https://github.com/user-attachments/assets/4dba0330-05b7-4a47-a022-c3bee6e5d0c6" />
 
 b)F12
-Don't know where the quistion is
+Don't know where the quistion is(will be fill in later)
 
 c)Update all operating system and all applications in Linux
 <img width="801" height="369" alt="h4 quistion C-1" src="https://github.com/user-attachments/assets/27449a53-b863-4ba6-9d22-9d20102633cf" />
