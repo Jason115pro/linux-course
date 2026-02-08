@@ -23,11 +23,11 @@ Injection is a classic identity crisis in computing—the system can't distingui
 Key Point: A famous webcomic illustrating the real-world danger of SQL Injection.
 Explan: It shows a mother naming her son Robert'); DROP TABLE Students;-- to sanitize her school's database, mocking systems that don't filter user input.
 If a simple name can destroy a database, who is really at fault: the person who entered the data, or the developer who wrote the code?
-References:https://owasp.org/Top10/A01_2021-Broken_Access_Control/
-           https://owasp.org/Top10/A05_2021-Security_Misconfiguration/
-           https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/
-           https://owasp.org/Top10/A03_2021-Injection/
-           https://xkcd.com/327/
+References: https://owasp.org/Top10/A01_2021-Broken_Access_Control/
+            https://owasp.org/Top10/A05_2021-Security_Misconfiguration/
+            https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/
+            https://owasp.org/Top10/A03_2021-Injection/
+            https://xkcd.com/327/
 
 a)install Goat
 <img width="1492" height="554" alt="h4 quistion A-1" src="https://github.com/user-attachments/assets/0a8df229-5463-4bbb-b9a3-e80d3725db5b" />
@@ -51,7 +51,6 @@ d)Sequel -Solve SQLZoo
 <img width="1951" height="903" alt="h4 Q d 0-1" src="https://github.com/user-attachments/assets/b8a74693-98e1-4ef5-898b-5287c59c8654" />
 <img width="1947" height="1072" alt="h4 Q d 0-2" src="https://github.com/user-attachments/assets/8e9829f6-330a-4ab9-bc8c-8a4a71e560a4" />
 <img width="1972" height="995" alt="h4 Q d 0-3" src="https://github.com/user-attachments/assets/0e59f5c4-4792-4425-96d8-b18fb767d3d1" />
-
 1:
 <img width="1457" height="838" alt="h4 Q d 1-1" src="https://github.com/user-attachments/assets/2e0aad89-82ef-4ef4-9e36-e0b24552c99b" />
 <img width="1393" height="855" alt="h4 Q d 1-2" src="https://github.com/user-attachments/assets/673671fc-2043-4b44-8113-a43e0c4117a9" />
@@ -68,7 +67,6 @@ d)Sequel -Solve SQLZoo
 <img width="1544" height="803" alt="h4 Q d 1-13" src="https://github.com/user-attachments/assets/9ffab3a0-3500-45d2-81be-26258d2d10ce" />
 <img width="1440" height="783" alt="h4 Q d 1-14" src="https://github.com/user-attachments/assets/30696b46-2842-4b03-a841-bfe9a6658b2d" />
 <img width="1459" height="849" alt="h4 Q d 1-15" src="https://github.com/user-attachments/assets/c6e0b316-cac1-4ecc-b39c-a9095d1bd144" />
-
 2:
 <img width="1846" height="771" alt="h4 Q d 2-1" src="https://github.com/user-attachments/assets/816c5ba8-e1c2-4627-a653-eefb5f99c2ad" />
 <img width="1405" height="722" alt="h4 Q d 2-2" src="https://github.com/user-attachments/assets/519de2f8-05f9-45fc-8009-abf1851fe421" />
@@ -83,3 +81,24 @@ d)Sequel -Solve SQLZoo
 <img width="1720" height="852" alt="h4 Q d 2-11" src="https://github.com/user-attachments/assets/c5d39bf9-5f42-496a-b2c7-56ac94a5aaba" />
 <img width="1793" height="770" alt="h4 Q d 2-12" src="https://github.com/user-attachments/assets/bf5ed575-e8ca-40a3-836a-21d9e81f62e8" />
 <img width="1421" height="945" alt="h4 Q d 2-13" src="https://github.com/user-attachments/assets/e068f3fb-9fe3-4a07-8150-61ea60906523" />
+
+e)Solve Portswigger Labs: Lab: SQL injection vulnerability in WHERE clause allowing retrieval of hidden data
+1:how and why
+This vulnerability occurs because the application concatenates user input directly into a SQL query without proper sanitization. This allows an attacker to "rewrite" the logic of the database command
+Expected : Only show products from the "Gifts" category that are "released" 
+2:How to find the vulnerabitiy
+Identify the input point
+First, browse the website and interact with the category filter. When you click a specific product category ("Gifts"), observe the URL: https://xxx.web-security-academy.net/filter?category=Gifts This indicates that category is a parameter sent to the backend.
+Test for syntax interference
+Append a single quote (') to the value of the category parameter:
+Action: Change category=Gifts to category=Gifts'.
+Observation: If the server returns an error message or the page content disappears unexpectedly, it usually means your quote broke the SQL query's string structure. This is a primary indicator of a SQL injection vulnerability.
+Verify using Boolean logic
+To confirm it is a SQL injection and not just a generic input error, try injecting logical statements:
+True Statement: Input Gifts' AND 1=1--. If the page loads normally and shows the Gifts category, you have successfully closed the query and executed it.
+False Statement: Input Gifts' AND 1=2--. If the page shows "no products found," it confirms that your injected SQL code is directly influencing the database query results.
+Bypass application logic
+Finally, try using OR 1=1 to test if you can extract hidden data.
+Action: Modify the parameter to ' OR 1=1--.
+Result: If the page displays more products than usual, you have confirmed that the vulnerability can be exploited to retrieve sensitive or hidden information.
+References: https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data
