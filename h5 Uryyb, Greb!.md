@@ -12,9 +12,10 @@ Distinguishes between symmetric encryption and public-key encryption
 
 
 Karvinen (2023): PGP - Send Encrypted and Signed Message - gpg
+This article shows how to use PGP encryption with gpg tool
+Key Generation -> Encrypting Messages -> imports and verifies the key -> Decryption
 
-
-a)
+a) 
 <img width="1348" height="898" alt="h5 a" src="https://github.com/user-attachments/assets/bfe60e09-0515-47dc-81d0-eb2cfd3a7289" />
 
 b)
