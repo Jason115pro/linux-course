@@ -1,4 +1,17 @@
 x)
+Schneier (2015): Applied Cryptography: Chapter 1: Foundations
+This chapter introduces the basic concepts, terminology, and the foundational framework of secure communication
+Terminology:
+Defines plaintext, ciphertext, encryption, and decryption
+Algorithms and Keys:
+Kerckhoffs's Principle is a core cornerstone of modern cryptography, it say that security should rely on the secrecy of the key, not the secrecy of the algorithm
+Security Functions:
+Introduces the four goals of cryptography, CIA triad and non-repudiation
+Keys:
+Distinguishes between symmetric encryption and public-key encryption
+
+
+Karvinen (2023): PGP - Send Encrypted and Signed Message - gpg
 
 
 a)
