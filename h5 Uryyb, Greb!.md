@@ -9,11 +9,13 @@ Security Functions:
 Introduces the four goals of cryptography, CIA triad and non-repudiation
 Keys:
 Distinguishes between symmetric encryption and public-key encryption
-
+References: https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/08_chap01.html#chap01-sec006 
+            -Schneier 2015: Applied Cryptography: Chapter 1: Foundations
 
 Karvinen (2023): PGP - Send Encrypted and Signed Message - gpg
 This article shows how to use PGP encryption with gpg tool
 Key Generation -> Encrypting Messages -> imports and verifies the key -> Decryption
+References: https://terokarvinen.com/2023/pgp-encrypt-sign-verify/ -Karvinen 2023: PGP - Send Encrypted and Signed Message - gpg
 
 a) 
 <img width="1348" height="898" alt="h5 a" src="https://github.com/user-attachments/assets/bfe60e09-0515-47dc-81d0-eb2cfd3a7289" />
@@ -23,7 +25,11 @@ b)
 
 c)
 <img width="1373" height="932" alt="h5 c" src="https://github.com/user-attachments/assets/37fa33f5-c828-49ef-bf4d-d0a5733bd4df" />
-
+Defense Credential Stuffing by using unique passwords
+Defense Brute Force Attacks by using randomness password
+Defense Phishing by using domain matching
+Defense Keylogging by using auto-Type
+References: https://psono.com/zh-Hant/blog/benefits-of-password-manager -PSONO 密碼管理器對企業和個人需求的好處(Benefits of Password Managers for Businesses and Individuals)
 
 d)
 <img width="1281" height="1030" alt="h5 d-1" src="https://github.com/user-attachments/assets/c0fdb9e0-be1a-4a5d-9b26-e6b0fe82b2e3" />
@@ -35,3 +41,27 @@ e)
 
 m)
 <img width="1192" height="197" alt="h5 m" src="https://github.com/user-attachments/assets/bca15136-51cd-46e4-b511-47c846cbafcb" />
+step:
+1.
+Prepare Plaintext(.txt) using touch
+touch test.txt
+2.
+Encrypt File
+openssl enc -aes-256-cbc -salt -in test.txt -out test.enc -pbkdf2
+3.
+Decrypt File
+openssl enc -d -aes-256-cbc -in test.enc -out test.txt -pbkdf2
+
+why use SSH:
+Ubiquity -It is pre-installed on almost all Linux and macOS systems
+High Performance -AES symmetric encryption is extremely fast, making it ideal for large files or backups
+Versatility -It can also handles SSL/TLS certificates and network security protocols
+
+Evaluate:
+advantage.
+Standard
+Lightweight
+
+shortcoming.
+Key exchange hard
+Complexity command
