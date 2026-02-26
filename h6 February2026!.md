@@ -13,6 +13,11 @@ No same results: It is impossible to find two different messages that have the s
 a)
 install Hashcat
 
+Create a new directory
+
+Get a big dictionary -Rockyou
+
+Identify Hash Type
 
 b)
 
