@@ -9,6 +9,9 @@ Fixed size: No matter how big the input is, the output is always the same length
 Big change: If you change even one letter in the input, the output changes completely
 No same results: It is impossible to find two different messages that have the same hash value
 
+References:
+Schneier 2015: Applied Cryptography: 2.3 One-Way Functions and 2.4 One-Way Hash Functions
+https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/10_chap02.html#chap02-sec003
 
 a)
 install Hashcat
