@@ -13,9 +13,11 @@ References:
 Schneier 2015: Applied Cryptography: 2.3 One-Way Functions and 2.4 One-Way Hash Functions
 https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/10_chap02.html#chap02-sec003
 
+
 a)
 install Hashcat
 <img width="774" height="184" alt="h6 qa-1" src="https://github.com/user-attachments/assets/c35f0bd4-ffb9-410e-9828-72b6b5b5e630" />
+
 Create a new directory
 <img width="375" height="73" alt="h6 qa-1 5" src="https://github.com/user-attachments/assets/79849e95-038d-4c39-ad6d-da6f3d3d5b39" />
 Get a big dictionary -Rockyou
