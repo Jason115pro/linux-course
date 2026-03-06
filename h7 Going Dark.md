@@ -44,8 +44,6 @@ search
 comment
 Search Efficiency: 
 Compared to mainstream commercial search engines like Google, Ahmia’s interface is extremely minimalist, which is a standard configuration in the Tor network. It effectively filters out some malicious content, providing a relatively "safe and controlled" entry point for researchers.
-Content Risks: 
-The prevalence of "Darknet News" sites in search results reflects the existence of numerous redundant or mirror sites within the deep web. For beginners, this serves as an important warning: search results do not equate to "reliable information," and many sites are built with simple frameworks like React, lacking substance or credibility.
 Privacy Trade-off: 
 The significant lag in page loading speed is the trade-off for the anonymity provided by routing traffic through multiple encrypted volunteer relay nodes.
 
